@@ -1,15 +1,15 @@
 # Connect Four (Python)
-Simulating a multiscreen multiplayer Connect Four game developed with python.
-Connect 4 is a turn-based game played on a 7x6 board. Each player alternatingly drops a coin into the holder (starting from the lowest row until the highest one).
+Simulating a multiscreen multiplayer Connect Four game developed with python.</br>
+Connect 4 is a turn-based game played on a 7x6 board. Each player alternatingly drops a coin into the holder (starting from the lowest row until the highest one).</br>
 The goal is to connect four of your coins horizontally, vertically, or diagonally before the other player does.
 
 ## GUI
 pygame is used for graphical user interface.
 
 ## Features and functionalities
--Three screens:
-screen 1: input names of players; player can select colour of choice of coin, start game option.
-screen 2: contains game board, coin to be dropped, displays number of remaining coins of each player.
+-Three screens:</br>
+screen 1: input names of players; player can select colour of choice of coin, start game option.</br>
+screen 2: contains game board, coin to be dropped, displays number of remaining coins of each player.</br>
 screen 3: displays result, quit option, play again option.
 
 
