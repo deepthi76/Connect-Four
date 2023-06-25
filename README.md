@@ -15,6 +15,12 @@ screen 3: displays result, quit option, play again option.
 Check out the screenshots here
 
 ## Screenshots
+<img width="700" alt="Screenshot 2023-06-25 at 6 38 25 PM" src="https://github.com/deepthi76/Connect-Four/assets/117646114/e86bfc6a-86b3-4eb5-bc2a-e31f04700ea1"></br>
+<img width="700" alt="Screenshot 2023-06-25 at 6 40 34 PM" src="https://github.com/deepthi76/Connect-Four/assets/117646114/e790fa56-94fc-41d9-a9ba-a7aec2cad69c"></br>
+<img width="700" alt="Screenshot 2023-06-25 at 6 45 24 PM" src="https://github.com/deepthi76/Connect-Four/assets/117646114/eb2a204b-b8fa-4d13-9577-b1365a9cec10"></br>
+<img width="700" alt="Screenshot 2023-06-25 at 6 45 24 PM" src="https://github.com/deepthi76/Connect-Four/assets/117646114/82eb1801-0294-4afd-9aa8-0800da909fef">
+
+
 
 
 ## Author
