@@ -6,9 +6,9 @@ import pygame_gui
 
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
-RED = (255, 0, 0)
-YELLOW = (255, 255, 0)
-BLUE=(0,0,255)
+RED = (255,139,148)
+YELLOW = (250, 238, 7)
+BLUE=(64,144,245)
 GREEN=(124,252,0)
 colour_p1=RED
 colour_p2=YELLOW
@@ -141,39 +141,43 @@ def screen1():
         screen.fill('black')
         MANAGER.draw_ui(screen)
 
-        red_p1 = pygame.draw.rect(screen, 'red', [560, 90, 100, 20], 0, 5)
+        red_p1 = pygame.draw.rect(screen, RED, [560, 90, 100, 20], 0, 5)
         if red_p1.collidepoint(pygame.mouse.get_pos()) and pygame.mouse.get_pressed()[0]:
             global colour_p1
             colour_p1=RED
-        yellow_p1 = pygame.draw.rect(screen, 'yellow', [560, 110, 100, 20], 0, 5)
+        yellow_p1 = pygame.draw.rect(screen, YELLOW, [560, 110, 100, 20], 0, 5)
         if yellow_p1.collidepoint(pygame.mouse.get_pos()) and pygame.mouse.get_pressed()[0]:
             colour_p1 = YELLOW
-        blue_p1 = pygame.draw.rect(screen, 'blue', [560, 130, 100, 20], 0, 5)
+        blue_p1 = pygame.draw.rect(screen, BLUE, [560, 130, 100, 20], 0, 5)
         if blue_p1.collidepoint(pygame.mouse.get_pos()) and pygame.mouse.get_pressed()[0]:
             colour_p1 = BLUE
-        green_p1 = pygame.draw.rect(screen, 'green', [560, 150, 100, 20], 0, 5)
+        green_p1 = pygame.draw.rect(screen, GREEN, [560, 150, 100, 20], 0, 5)
         if green_p1.collidepoint(pygame.mouse.get_pos()) and pygame.mouse.get_pressed()[0]:
             colour_p1 = GREEN
 
-        red_p2 = pygame.draw.rect(screen, 'red', [560, 200, 100, 20], 0, 5)
+        red_p2 = pygame.draw.rect(screen, RED, [560, 200, 100, 20], 0, 5)
         if red_p2.collidepoint(pygame.mouse.get_pos()) and pygame.mouse.get_pressed()[0]:
             global colour_p2
             colour_p2 = RED
-        yellow_p2 = pygame.draw.rect(screen, 'yellow', [560, 220, 100, 20], 0, 5)
+        yellow_p2 = pygame.draw.rect(screen, YELLOW, [560, 220, 100, 20], 0, 5)
         if yellow_p2.collidepoint(pygame.mouse.get_pos()) and pygame.mouse.get_pressed()[0]:
             colour_p2 = YELLOW
-        blue_p2 = pygame.draw.rect(screen, 'blue', [560, 240, 100, 20], 0, 5)
+        blue_p2 = pygame.draw.rect(screen, BLUE, [560, 240, 100, 20], 0, 5)
         if blue_p2.collidepoint(pygame.mouse.get_pos()) and pygame.mouse.get_pressed()[0]:
             colour_p2 = BLUE
-        green_p2 = pygame.draw.rect(screen, 'green', [560, 260, 100, 20], 0, 5)
+        green_p2 = pygame.draw.rect(screen, GREEN, [560, 260, 100, 20], 0, 5)
         if green_p2.collidepoint(pygame.mouse.get_pos()) and pygame.mouse.get_pressed()[0]:
             colour_p2 = GREEN
 
 
         player1_text = font.render('Enter Player 1 name: ', True, colour_p1)
         screen.blit(player1_text, (100, 117))
+        player1_enter = font.render('(and press enter) ', True, colour_p1)
+        screen.blit(player1_enter, (100, 147))
         player2_text = font.render('Enter Player 2 name: ', True, colour_p2)
         screen.blit(player2_text, (100, 217))
+        player2_enter = font.render('(and press enter) ', True, colour_p2)
+        screen.blit(player2_enter, (100, 247))
         menu_btn = pygame.draw.rect(screen, 'light gray', [230, 300, 260, 60], 0, 5)
         pygame.draw.rect(screen, 'dark gray', [230, 300, 260, 60], 5, 5)
         text = font.render('Start game', True, 'black')
